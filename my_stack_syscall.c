@@ -1,4 +1,4 @@
-#include<linx/syscalls.h>
+#include<linux/syscalls.h>
 #include<linux/kernel.h>
 #include<linux/linkage.h>
 
@@ -41,7 +41,8 @@ else
   }
   printk("Stack Bottom--------------\n");
 }
-
+}
+  
 SYSCALL_DEFINE0(jamie_pop)
 {
   int x = -1;
